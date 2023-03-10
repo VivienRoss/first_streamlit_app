@@ -37,7 +37,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 
        except URLError as e:
          streamlit.error()
-         
+          
 streamlit.stop()
 
 #import snowflake.connector
