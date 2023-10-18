@@ -24,11 +24,11 @@ tab1.bar_chart(
 
 tab2.subheader("Sales Details")
 
-chart_data = pd.DataFrame(np.random.randn(20, 2), columns=["Sales 2023", "Sales 2022"])
+chart_data = pd.DataFrame(np.random.randn(12, 5), columns=["Sales 2023", "Sales 2022"])
 
 tab2.line_chart(chart_data)
 
-df = pd.DataFrame(np.random.randn(5, 5), columns=(["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"]))
+df = pd.DataFrame(np.random.randn(12, 5), columns=(["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"]))
 
 tab2.table(df)
 
