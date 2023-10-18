@@ -12,12 +12,12 @@ col1, col2, col3, col4 = tab1.columns(4)
 col1.metric("Total Sales", "52.636 €", "5,2 %")
 col2.metric("# Tickets ", "522", "-8%")
 col3.metric("Margin", "32%", "4%")
-col4.metric("Target", "60.000", "-12.2%")
+col4.metric("Target", "60.000 €", "-12.2%")
 
 tab1.markdown("""---""")
 
 chart_data = pd.DataFrame(
-   {"Produits": list(range(10)), "CY": np.random.randn(10), "LY": np.random.randn(10)}
+   {"Produits": "Product1","Product2", "CY": np.random.randn(2), "LY": np.random.randn(2)}
 )
 
 tab1.bar_chart(
