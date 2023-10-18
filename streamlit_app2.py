@@ -17,11 +17,11 @@ col4.metric("abc", "8.655", "-2%")
 tab1.markdown("""---""")
 
 chart_data = pd.DataFrame(
-   {"Produits": list(range(20)), "col2": np.random.randn(20), "col3": np.random.randn(20)}
+   {"Produits": list(range(10)), "CY": np.random.randn(20), "LY": np.random.randn(20)}
 )
 
 tab1.bar_chart(
-   chart_data, x="Produits", y=["col2", "col3"], color=["#FF0000", "#0000FF"]  
+   chart_data, x="Produits", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
 )
 
 tab2.subheader("Details des ventes")
