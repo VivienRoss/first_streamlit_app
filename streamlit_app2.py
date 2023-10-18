@@ -17,7 +17,7 @@ col4.metric("Target", "60.000 €", "-12.2%")
 tab1.markdown("""---""")
 
 chart_data = pd.DataFrame(
-   {"Produits": "Product"+list(range(10)), "CY": np.random.randn(2), "LY": np.random.randn(2)}
+   {"Produits": ["Product1","Product2","Product3","Product4","Product5"], "CY": np.random.randn(5), "LY": np.random.randn(5)}
 )
 
 tab1.bar_chart(
