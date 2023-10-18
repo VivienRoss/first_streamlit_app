@@ -14,7 +14,7 @@ col2.metric("# Tickets ", "522", "-8%")
 col3.metric("test", "86%", "4%")
 col4.metric("abc", "8.655", "-2%")
 
-st.markdown("""---""")
+tab1.markdown("""---""")
 
 chart_data = pd.DataFrame(np.random.randn(5, 1), columns=["Produit"])
 
