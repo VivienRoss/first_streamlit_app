@@ -21,9 +21,8 @@ chart_data = pd.DataFrame(
 )
 
 tab1.bar_chart(
-   chart_data, x="Produits", y=["Valeur"], color=["#FF0000", "#0000FF"]  # Optional
+   chart_data, x="Produits", y="Valeur", color=["#FF0000", "#0000FF"] 
 )
-tab1.bar_chart(chart_data)
 
 tab2.subheader("Details des ventes")
 
