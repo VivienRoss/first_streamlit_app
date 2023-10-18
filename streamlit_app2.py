@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import altair as alt
 import streamlit as st
 
 tab1, tab2 = st.tabs(["📈 Overviewe", "🗃 Details"])
@@ -17,11 +17,13 @@ col4.metric("Target", "60.000 €", "-12.2%")
 tab1.markdown("""---""")
 
 chart_data = pd.DataFrame(
-   {"Produits": ["Product1","Product2","Product3","Product4","Product5"], "CY": np.random.randn(5), "LY": np.random.randn(5)}
+   {"Produits": ["Product 1","Product 2","Product 3","Product 4","Product 5"], "CY": np.random.randn(5), "LY": np.random.randn(5)}
 )
 
-tab1.bar_chart(
-   chart_data, x="Produits", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
+
+tab1.Chart(source).mark_bar().encode(
+    x="Produits",
+    y=["CY", "LY"]
 )
 
 tab2.subheader("Sales Details")
