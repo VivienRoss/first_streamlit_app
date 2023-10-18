@@ -9,7 +9,7 @@ metric("Metric 0", 0)
 st.write("## ... and here's a row of them")
 metric_row(
     {
-        "Total des ventes": 45.236 € ,
+        "Total des ventes": 45.236 ,
         "# Tickets": 200,
         "Metric 3": 300,
         "Metric 4": 400,
