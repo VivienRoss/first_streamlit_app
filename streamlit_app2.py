@@ -16,14 +16,14 @@ col4.metric("Target", "60.000 €", "-12.2%")
 
 tab1.markdown("""---""")
 
-chart_data = pd.DataFrame(
-   {"Produits": ["Product 1","Product 2","Product 3","Product 4","Product 5"], "CY": np.random.randn(5), "LY": np.random.randn(5)}
-)
+source = pd.DataFrame({
+    'a': ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'],
+    'b': [28, 55, 43, 91, 81, 53, 19, 87, 52]
+})
 
-
-tab1.Chart(chart_data).mark_bar().encode(
-    x="Produits",
-    y=["CY", "LY"]
+alt.Chart(source).mark_bar().encode(
+    x='a',
+    y='b'
 )
 
 tab2.subheader("Sales Details")
