@@ -20,7 +20,7 @@ chart_data = pd.DataFrame(
    {"Produits": list(range(10)), "CY": np.random.randn(10), "LY": np.random.randn(10)}
 )
 
-tab1.bar_chart(
+tab1.altair_chart(
    chart_data, x="Produits", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
 )
 
