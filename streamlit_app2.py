@@ -22,7 +22,8 @@ tab1.bar_chart(
    chart_data, x="Produits", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
 ) 
 
-tab1.text('Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression')
+tab1.text('Le Lorem Ipsum est simplement du faux texte employé dans la composition')
+tab1.text('et la mise en page avant impression.')
 
 
 tab2.subheader("Sales Details")
