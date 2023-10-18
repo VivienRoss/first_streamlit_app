@@ -46,5 +46,6 @@ tab3.scatter_chart(
     chart_data,
     x='CY',
     y='LY',
-     color=['#FF0000', '#0000FF'],  # Optional
+   color='Produits',
+     color=['#FF0000', '#0000FF'],
 )
