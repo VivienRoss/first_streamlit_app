@@ -20,10 +20,10 @@ col4.metric("Target", "60.000 €", "-12.2%")
 
 tab1.markdown("""---""")
 
-chart_data = pd.DataFrame({"Produits":["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"], "CY": np.random.randn(5),"LY": np.random.randn(5)})
+chart_data = pd.DataFrame({"Products":["Product 1","Product 2","Product 3","Product 4","Product 5"], "CY": np.random.randn(5),"LY": np.random.randn(5)})
 
 tab1.bar_chart(
-   chart_data, x="Produits", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
+   chart_data, x="Products", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
 ) 
 
 
@@ -34,17 +34,17 @@ chart_data = pd.DataFrame(np.random.randn(12, 2), columns=["Sales 2023", "Sales 
 
 tab2.line_chart(chart_data)
 
-df = pd.DataFrame(np.random.randn(12, 5), columns=(["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"]))
+df = pd.DataFrame(np.random.randn(12, 5), columns=(["Product 1","Product 2","Product 3","Product 4","Product 5"]))
 
 tab2.table(df)
 
 tab3.subheader("Other visuals")
 
-chart_data = pd.DataFrame({"Produits":["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"], "CY": np.random.randn(5),"LY": np.random.randn(5)})
+chart_data = pd.DataFrame({"Products":["Product 1","Product 2","Product 3","Product 4","Product 5"], "CY": np.random.randn(5),"Margin": np.random.randn(5)})
 
 tab3.scatter_chart(
     chart_data,
     x='CY',
-    y='LY',
-   color='Produits',
+    y='Margin',
+   color='Products',
 )
