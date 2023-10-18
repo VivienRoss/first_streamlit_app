@@ -45,6 +45,6 @@ chart_data = pd.DataFrame({"Produits":["Produit 1","Produit 2","Produit 3","Prod
 tab3.scatter_chart(
     chart_data,
     x='CY',
-    y=['LY', 'Produits'],
+    y=['LY'],
      color=['#FF0000', '#0000FF'],  # Optional
 )
