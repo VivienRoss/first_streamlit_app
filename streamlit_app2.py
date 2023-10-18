@@ -24,7 +24,7 @@ tab1.bar_chart(
 
 tab2.subheader("Sales Details")
 
-chart_data = pd.DataFrame(np.random.randn(20, 150), columns=["Sales 2023", "Sales 2022"])
+chart_data = pd.DataFrame(np.random.randn(20, 2), columns=["Sales 2023", "Sales 2022"])
 
 tab2.line_chart(chart_data)
 
