@@ -16,11 +16,9 @@ col4.metric("Target", "60.000 €", "-12.2%")
 
 tab1.markdown("""---""")
 
-chart_data = pd.DataFrame({"Produits":["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"], "CY": np.random.randn(20),"LY": np.random.randn(20)})
+#chart_data = pd.DataFrame({"Produits":["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"], "CY": np.random.randn(5),"LY": np.random.randn(5)})
 
-tab1.bar_chart(
-   chart_data, x="Produits", y=["CY", "LY"], color=["#FF0000", "#0000FF"]  
-)
+ 
 
 tab2.subheader("Sales Details")
 
