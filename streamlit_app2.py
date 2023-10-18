@@ -21,7 +21,7 @@ chart_data = pd.DataFrame(
 )
 
 
-tab1.Chart(source).mark_bar().encode(
+tab1.alt.Chart(source).mark_bar().encode(
     x="Produits",
     y=["CY", "LY"]
 )
