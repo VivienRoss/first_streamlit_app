@@ -7,7 +7,7 @@ import streamlit as st
 col1, col2, col3 = st.columns(3)
 col1.metric("Total des Ventes", "52.636 €", "5,2 %")
 col2.metric("# Tickets ", "522", "-8%")
-col3.metric("test", "86%", "4%"))
+col3.metric("test", "86%", "4%")
 
 
 
