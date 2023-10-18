@@ -42,4 +42,9 @@ tab3.subheader("Other visuals")
 
 chart_data = pd.DataFrame({"Produits":["Produit 1","Produit 2","Produit 3","Produit 4","Produit 5"], "CY": np.random.randn(5),"LY": np.random.randn(5)})
 
-tab3.scatter_chart(chart_data)
+tab3.scatter_chart(
+    chart_data,
+    x='CY',
+    y=['LY', 'Produits'],
+     color=['#FF0000', '#0000FF'],  # Optional
+)
